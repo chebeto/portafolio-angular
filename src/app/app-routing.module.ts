@@ -7,10 +7,10 @@ import { ItemComponent } from './pages/item/item.component';
 
 // Se define las rutas a seguir para la navegacion
 const app_routes: Routes = [
-    { path: '', component: PortfolioComponent},
+    { path: 'home', component: PortfolioComponent},
     { path: 'about', component: AboutComponent},
     { path: 'item', component: ItemComponent},
-    { path: '**', pathMatch:'full', redirectTo: ''}
+    { path: '**', pathMatch:'full', redirectTo: 'home'}
 
 ];
 
