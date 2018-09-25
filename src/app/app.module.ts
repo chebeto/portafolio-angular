@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { HttpClientModule } from '@angular/common/http';
 
 //Rutas de navegacion
 import { AppRoutingModule } from './app-routing.module';
@@ -10,6 +11,7 @@ import { FooterComponent } from './shared/footer/footer.component';
 import { PortfolioComponent } from './pages/portfolio/portfolio.component';
 import { AboutComponent } from './pages/about/about.component';
 import { ItemComponent } from './pages/item/item.component';
+
 
 
 @NgModule({
@@ -23,7 +25,8 @@ import { ItemComponent } from './pages/item/item.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
