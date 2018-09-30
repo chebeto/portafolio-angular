@@ -3,6 +3,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { PortfolioComponent } from './pages/portfolio/portfolio.component';
 import { AboutComponent } from './pages/about/about.component';
 import { ItemComponent } from './pages/item/item.component';
+import { SearchComponent } from './pages/search/search.component';
 
 
 // Se define las rutas a seguir para la navegacion
@@ -10,7 +11,8 @@ const app_routes: Routes = [
     { path: 'home', component: PortfolioComponent},
     { path: 'about', component: AboutComponent},
     { path: 'item/:id', component: ItemComponent},
-    { path: '**', pathMatch:'full', redirectTo: 'home'}
+    { path: 'search/:termino', component: SearchComponent},
+    { path: '**', pathMatch: 'full', redirectTo: 'home'}
 
 ];
 
